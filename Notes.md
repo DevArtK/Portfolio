@@ -15,3 +15,7 @@ is for modifier class (special case)
 ```
 @media (min-width: x00px) {}
 ```
+
+
+- absolute positioning and grid work well together
+- adding two box shadows one darker and one lighter ontop of each other makes them look more realistic
