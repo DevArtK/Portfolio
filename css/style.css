@@ -336,7 +336,7 @@ header {
 }
 
 .service {
-  max-width: 500;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -353,15 +353,43 @@ header {
   }
 }
 
+
 /* ----- Tech Stack ----- */
-.tech-stack {
+.my-tech {
+  max-width: 100%;
   background: var(--clr-dark);
+  color: var(--clr-white);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+  text-align: left;
 
 }
 
-.tech-stack h2 {
-  color: var(--clr-accent)
+.my-tech h2 {
+  color: var(--clr-accent);
+  font-size: 3rem;
 }
+
+
+
+.stack {
+  display: flex;
+  max-width: 35%;
+  margin: 0 auto;
+  margin-left: 2em;
+  margin-bottom: 5em;
+
+}
+
+.stack li {
+  list-style: none;
+}
+
+.stack h3 {
+  color: var(--clr-accent);
+  margin-bottom: 2rem;
+}
+
 
 
 /*-----  About ----- */
