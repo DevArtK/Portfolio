@@ -12,7 +12,8 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-  --clr-white: #fff;
+  /* --clr-white: #fff; */
+  --clr-white: #fff5f4;
   --clr-dark: #303030;
   --clr-accent: #37b2f8;
   /* --clr-accent: #16E0BD; */
@@ -125,7 +126,10 @@ h3 {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--clr-accent);
+  /* background: var(--clr-accent); */
+  background: -webkit-linear-gradient(-70deg, #a2facf, var(--clr-accent));
+  background-size: 100% 100%;
+  animation: gradient 0.5s ease infinite;
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
@@ -348,24 +352,22 @@ header {
     margin-right: auto;
   }
 
-  .service+.service {
+  .service + .service {
     margin-left: 2em;
   }
-
 }
 
 /* ----- Tech Stack ----- */
 .my-tech {
   background: var(--clr-dark);
   color: white;
-
 }
 
 .my-tech em {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
-@media(min-width: 800px) {
+@media (min-width: 800px) {
   .my-tech {
     max-width: 100vw;
     display: grid;
@@ -385,7 +387,6 @@ header {
     line-height: 125px;
     border-right: 2px solid var(--clr-accent);
   }
-
 }
 
 .tech-list {
@@ -393,10 +394,10 @@ header {
 }
 
 .tech-list__header {
-  color: var(--clr-accent)
+  color: var(--clr-accent);
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .section__title--tech {
     display: block;
     flex-wrap: wrap;
@@ -404,7 +405,7 @@ header {
   }
 
   .my-tech__header {
-    border-bottom: 2px solid var(--clr-accent)
+    border-bottom: 2px solid var(--clr-accent);
   }
 }
 
@@ -450,10 +451,7 @@ header {
     position: relative;
     z-index: 2;
   }
-
 }
-
-
 
 .about-me__body,
 p {
@@ -550,4 +548,16 @@ p {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@keyframes gradiet {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
