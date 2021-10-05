@@ -7,4 +7,4 @@
 - Javascript
 
 ## Live Version 
-https://alphaomegaak.github.io/Portfolio/
+https://devartk.github.io/Portfolio/
